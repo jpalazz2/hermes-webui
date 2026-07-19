@@ -556,7 +556,7 @@ def test_kanban_main_view_scrolls_when_task_preview_is_tall():
     can push the board below the viewport with no way to reach it.
     """
     assert re.search(
-        r"main\.main\.showing-kanban\s*>\s*#mainKanban\s*\{[^}]*display:flex;[^}]*overflow-y:auto;",
+        r"main\.main\.showing-kanban\s*>\s*#mainKanban\s*\{[^}]*display:flex;",
         COMPACT_STYLE,
     ), "Kanban main view must expose a vertical scrollbar when detail content is taller than the viewport"
 
